@@ -1,6 +1,6 @@
 # Centerpoint-TensorRT-ROS
 # Model && Data
-## Model. 
+## Model
 This repository contains sources and model for CenterPoint inference using TensorRT. The model is created with mmdetection3d.
 
 Overall inference has five phases:
