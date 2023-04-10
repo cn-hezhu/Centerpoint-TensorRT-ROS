@@ -1,0 +1,14 @@
+<launch>
+  <param name="/use_sim_time" value="true" />
+  <arg name="input_topic" default="/velodyne_points" /> 
+  <arg name="baselink_support" default="false" />
+  <!-- <arg name="baselink_support" default="True" /> -->
+  <node pkg="perception" type="perception"
+    name="mmdet_pp" output="screen" >
+    <remap from="/points_raw" to="$(arg input_topic)"/>
+    <param name="baselink_support"            value="$(arg baselink_support)" />
+  </node>
+  
+  <node pkg="tf" type="static_transform_publisher" name="laser_broadcaster2" args="0 0 3.5 0 0 0 base_footprint velodyne 100" />
+
+</launch>

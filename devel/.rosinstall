@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/nvidia/centerpoint_ws/devel/setup.sh

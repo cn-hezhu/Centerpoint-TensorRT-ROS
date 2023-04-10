@@ -1,0 +1,8 @@
+prefix=/home/nvidia/centerpoint_ws/install
+
+Name: autoware_msgs
+Description: Description of autoware_msgs
+Version: 1.14.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs message_runtime sensor_msgs std_msgs
