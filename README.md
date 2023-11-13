@@ -5,11 +5,16 @@ This repository contains sources and model for CenterPoint inference using Tenso
 
 Overall inference has five phases:
 
-Convert points cloud into 4-channle voxels
-Extend 4-channel voxels to 10-channel voxel features
-Run pfe TensorRT engine to get 64-channel voxel features
-Run rpn backbone TensorRT engine to get 3D-detection raw data
-Parse bounding box, class type and direction
+1. Convert points cloud into 4-channle voxels
+
+2. Extend 4-channel voxels to 10-channel voxel features
+
+3. Run pfe TensorRT engine to get 64-channel voxel features
+
+4. Run rpn backbone TensorRT engine to get 3D-detection raw data
+
+5.Parse bounding box, class type and direction
+
 ## Data
 The demo used the custom dataset like KITTI.
 
