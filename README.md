@@ -3,6 +3,8 @@
 ## Model
 This repository contains sources and model for CenterPoint inference using TensorRT. The model is created with mmdetection3d.
 
+The onnx file can be converted by [onnx_tools](https://github.com/CV-player/mmdetection3d/tree/master/tools/onnx_tools/centerpoint).
+
 Overall inference has five phases:
 
 1. Convert points cloud into 4-channle voxels
